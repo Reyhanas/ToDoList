@@ -1,0 +1,146 @@
+body {
+    background-color: rgb(220, 255, 196);
+    font-family: Helvetica;
+}
+
+.todo-wrapper {
+    margin-top: 50px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    padding: 25px;
+    font-weight: 250;    
+    max-width: 500px; /* Mengatur lebar maksimum */
+    width: 100%; /* Mengatur lebar menjadi 100% dari parent */
+}
+
+.todo-wrapper h2 {
+    margin: 0;
+}
+
+.todo-wrapper p {
+    font-style: italic;
+    color: gray;
+    margin: 10px 0;
+}
+
+.todo-wrapper ol {
+    margin: 20px 0;
+}
+
+.todo-wrapper ol li {
+    margin: 5px 0;
+    padding: 3px;
+    transition: all 0.5s ease-out;
+}
+
+.todo-wrapper form {
+    display: inline-block;
+}
+
+.todo-wrapper input {
+    padding: 3px 5px;
+}
+
+.todo-wrapper
+.pretty-button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.todo-wrapper
+.pretty-button {
+    margin: 10px 12px;
+    color: white;
+    background-color: rgb(0, 110, 255);
+    border-radius: 15px;
+    padding: 5px 20px;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    font-size: small;
+}
+
+#empty-button {
+    background-color: #ff4d4d; 
+}
+
+#save-button {
+    background-color: #4CAF50;
+}
+
+#todo-entry-box {
+    width: 250%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#add-button {
+    display:grid;
+}
+
+.completed {
+    text-decoration: line-through; /* Mencoret teks */
+    color: #888; /* Warna teks yang dicoret, bisa diubah sesuai kebutuhan */
+}
+
+/* Aturan untuk desktop */
+@media (min-width: 1024px) {
+    .todo-wrapper {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    .todo-wrapper h2 {
+        font-size: 2em;
+    }
+
+    .todo-wrapper p {
+        font-size: 1em;
+    }
+}
+
+/* Aturan untuk tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .todo-wrapper {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .todo-wrapper h2 {
+        font-size: 1.5em;
+    }
+
+    .todo-wrapper p {
+        font-size: 0.9em;
+    }
+}
+
+/* Aturan untuk smartphone */
+@media (max-width: 767px) {
+    .todo-wrapper {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .todo-wrapper h2 {
+        font-size: 1.2em;
+    }
+
+    .todo-wrapper p {
+        font-size: 0.8em;
+    }
+
+    .todo-wrapper input,
+    .todo-wrapper .pretty-button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .todo-wrapper .pretty-button {
+        margin: 5px 0;
+        padding: 10px;
+        font-size: 1em;
+    }
+}
