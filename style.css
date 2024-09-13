@@ -119,6 +119,10 @@ body {
     .todo-wrapper p {
         font-size: 0.9em;
     }
+
+    #todo-entry-box {
+        width: 90%; /* Lebih kecil untuk tablet */
+    }
 }
 
 /* Aturan untuk smartphone */
@@ -146,5 +150,9 @@ body {
         margin: 5px 0;
         padding: 10px;
         font-size: 1em;
+    }
+
+    #todo-entry-box {
+        width: 70%; /* Lebih kecil untuk tablet */
     }
 }
