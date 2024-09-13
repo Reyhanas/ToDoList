@@ -99,6 +99,10 @@ body {
     .todo-wrapper p {
         font-size: 1em;
     }
+
+    #todo-entry-box {
+        width: 90%; /* Lebih kecil untuk tablet */
+    }
 }
 
 /* Aturan untuk tablet */
